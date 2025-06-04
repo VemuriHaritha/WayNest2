@@ -6,7 +6,7 @@ if(process.env.NODE_ENV != "production"){
 }
 
 // const MONGO_URL = "mongodb://localhost:27017/wanderlust";
-const MONGO_URL = "mongodb+srv://vkvijaykumarvk22:MkFKoUpcUPogubDN@cluster0.tbepn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const MONGO_URL = process.env.ATLAS_URL;
 main()
   .then(() => {
     console.log("connected to DB");
